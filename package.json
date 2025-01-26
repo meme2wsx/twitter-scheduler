@@ -6,7 +6,7 @@
       "start": "ts-node src/postTweet.ts"
     },
     "dependencies": {
-      "twitter-lite": "^2.0.0"
+      "twitter-lite": "^1.1.0"
     },
     "devDependencies": {
       "ts-node": "^10.9.1",
