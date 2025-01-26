@@ -4,6 +4,7 @@ on:
   schedule:
     # - cron: "30 6,12 * * *" # UTCで設定（日本時間の15:30と21:30に相当）
     - cron: "40 2,12 * * *" # UTCで設定（日本時間の15:30と21:30に相当）
+  workflow_dispatch: # 手動実行を可能にする
 
 jobs:
   post-tweet:
