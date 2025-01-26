@@ -2,7 +2,8 @@ name: Post to Twitter
 
 on:
   schedule:
-    - cron: "30 6,12 * * *" # UTCで設定（日本時間の15:30と21:30に相当）
+    # - cron: "30 6,12 * * *" # UTCで設定（日本時間の15:30と21:30に相当）
+    - cron: "40 2,12 * * *" # UTCで設定（日本時間の15:30と21:30に相当）
 
 jobs:
   post-tweet:
