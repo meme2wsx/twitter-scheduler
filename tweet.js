@@ -1,6 +1,6 @@
 const { TwitterApi } = require('twitter-api-v2');
 
-// 環境変数から認証情報を取得
+// 環境変数から認証情報を取得ワオ。
 const client = new TwitterApi({
   appKey: process.env.TWITTER_APP_KEY,
   appSecret: process.env.TWITTER_APP_SECRET,
@@ -20,12 +20,12 @@ const fortunes = [
   "勤勉のバカほど傍迷惑なものはないワオ。",
 ];
 
-// ランダムに1つ選ぶ
+// ランダムに1つ選ぶワオ。
 const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
 
 (async () => {
   try {
-    // 選んだ文字列をツイート
+    // 選んだ文字列をツイートするワオ。
     const tweet = await client.v2.tweet(`今日のお言葉: ${randomFortune}`);
     console.log('ツイート成功:', tweet);
   } catch (error) {
