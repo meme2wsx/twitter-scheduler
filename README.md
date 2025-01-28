@@ -33,5 +33,3 @@ export TWITTER_ACCESS_TOKEN="dummy"
 export TWITTER_ACCESS_SECRET="dummy"
 DRY_RUN=true node src/tweetImage.js
 ```
-
-```
