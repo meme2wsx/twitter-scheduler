@@ -25,3 +25,13 @@ GitHub Actionsのトリガーをつかって、あらかじめ用意しておい
 * Xの制限で、POSTできる上限があります（2025/1/27現在は、１日あたり17件） 。
 https://docs.x.com/x-api/fundamentals/rate-limits#v2-limits-free
 
+### twitterへ投稿はせずに試す
+```
+export TWITTER_APP_SECRET="dummy"
+export TWITTER_ACCESS_TOKEN="dummy"
+export TWITTER_ACCESS_TOKEN="dummy"
+export TWITTER_ACCESS_SECRET="dummy"
+DRY_RUN=true node src/tweetImage.js
+```
+
+```
