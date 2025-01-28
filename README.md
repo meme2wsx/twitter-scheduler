@@ -12,13 +12,13 @@ GitHub Actionsのトリガーをつかって、あらかじめ用意しておい
 ### おおまかな作業
 1. X Developer Platform に登録 & 認証用のトークンを発行。
 2. GitHub→リポジトリ→ Secrets and Variables にて、Xで発行したトークンを登録します。
-   以下のキーが必要です。値は発行したものを格納してください。
+   キー名は以下のとおり。値は発行したものを格納してください。
    1. TWITTER_APP_SECRET
    2. TWITTER_ACCESS_TOKEN
    3. TWITTER_ACCESS_TOKEN
    4. TWITTER_ACCESS_SECRET
 3. 投稿のタイミングは `.github/workflows/main.yml` を編集してください。
-4. 用意しておく文言は `tweetsSets.js`  に書いてください。
+4. 用意しておく文言や画像は `tweetsSets.js`  に書いてください。
 
 ### 注
 * GH Actionは 公開リポジトリでないとスケジュール実行できません。
