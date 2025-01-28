@@ -1,16 +1,6 @@
 {
-    "name": "twitter-scheduler",
-    "version": "1.0.0",
-    "main": "src/postTweet.ts",
-    "scripts": {
-      "start": "ts-node src/postTweet.ts"
-    },
-    "dependencies": {
-      "twitter-lite": "^2.0.0"
-    },
-    "devDependencies": {
-      "ts-node": "^10.9.1",
-      "typescript": "^4.5.5"
-    }
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "twitter-api-v2": "^1.19.0"
   }
-  
+}
