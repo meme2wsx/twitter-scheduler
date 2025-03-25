@@ -59,8 +59,9 @@ const postTweetWithImage = async (text, imagePath, dryRun = false) => {
 // main
 (async () => {
   const tweetSet = getRandomTweetSet();
-  const imagePath = tweetSet.image ? path.join(__dirname, 'images', tweetSet.image) : null; // 画像のパスを指定
-  console.log(`選ばれたセットワオ: 文字列="${tweetSet.text}", 画像="${tweetSet.image}"`);
+  const imagePath = tweetSet.image ? path.join(__dirname, 'images', tweetSet.image) : path.join(__dirname, 'images', 'default.png'); // 画像のパスを指定
+  console.log(`選ばれたセットワオ: 文字列="${tweetSet.text}", 画像="${tweetSet.image || 'default.png'}"`);
   const isDryRun = process.env.DRY_RUN === 'true'; // DRY_RUN環境変数で制御
   await postTweetWithImage(tweetSet.text, imagePath, isDryRun);
 })();
+
