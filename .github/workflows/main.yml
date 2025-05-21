@@ -1,8 +1,8 @@
 name: Tweet
 
 on:
-   schedule:
-    - cron: '35 0-13 * * *' # 9-22時35分に実行(日本時間)
+   # schedule:
+   #  - cron: '35 0-13 * * *' # 9-22時35分に実行(日本時間)
    workflow_dispatch:
  
 jobs:
